@@ -23,8 +23,8 @@ export const mock_navMain = [
     icon: PinIcon,
   },
   {
-    title: "Projects",
-    url: "#",
+    title: "Documents",
+    url: "/documents",
     icon: Projector,
   },
   {

@@ -1,6 +1,7 @@
 import { SignedIn, SignedOut, SignIn } from "@clerk/nextjs";
 import AdminLayout from "../_components/admin-layout";
 import { SidebarProvider } from "@/components/ui/sidebar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "CartWeb. - Admin",
@@ -16,6 +17,7 @@ export default function RootAdminLayout({
     <>
       <SignedIn>
         <SidebarProvider>
+          <Toaster />
           <AdminLayout>{children}</AdminLayout>
         </SidebarProvider>
       </SignedIn>
